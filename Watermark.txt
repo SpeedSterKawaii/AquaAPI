@@ -1,0 +1,90 @@
+-- Stop Skidding my Watermark --
+-- At least add credits to me bruh --
+print("Aqua has Injected.")
+
+local Aqua = Instance.new("ScreenGui")
+local Icon = Instance.new("ImageLabel")
+local AquaLabel = Instance.new("TextLabel")
+local Softworks = Instance.new("TextLabel")
+local CreditsLabel = Instance.new("TextLabel")
+
+
+Aqua.Name = "Aqua"
+Aqua.Parent = game.CoreGui
+Aqua.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Icon.Name = "Icon"
+Icon.Parent = Aqua
+Icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Icon.BackgroundTransparency = 1.000
+Icon.Position = UDim2.new(0.438, 0,0.415, 0) -- 0.36147064, 0, 0.415094644, 0
+Icon.Size = UDim2.new(0, 158, 0, 159)
+Icon.Image = "rbxassetid://6432841117"
+Icon.ScaleType = Enum.ScaleType.Fit
+Icon.Active = true
+
+AquaLabel.Name = "AquaLabel"
+AquaLabel.Parent = Icon
+AquaLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AquaLabel.BackgroundTransparency = 1.000
+AquaLabel.Position = UDim2.new(0.438, 0,0.415, 0)
+AquaLabel.Size = UDim2.new(0, 200, 0, 50)
+AquaLabel.Font = Enum.Font.GothamBold
+AquaLabel.Text = "Aqua"
+AquaLabel.TextColor3 = Color3.fromRGB(0, 110, 255)
+AquaLabel.TextScaled = true
+AquaLabel.TextSize = 14.000
+AquaLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+AquaLabel.TextStrokeTransparency = 0.000
+AquaLabel.TextWrapped = true
+AquaLabel.Visible = false
+
+Softworks.Name = "Softworks"
+Softworks.Parent = Icon
+Softworks.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Softworks.BackgroundTransparency = 1.000
+Softworks.Position = UDim2.new(0.438, 0,0.415, 0)
+Softworks.Size = UDim2.new(0, 200, 0, 50)
+Softworks.Font = Enum.Font.GothamBold
+Softworks.Text = "Softworks"
+Softworks.TextColor3 = Color3.fromRGB(0, 110, 255)
+Softworks.TextScaled = true
+Softworks.TextSize = 14.000
+Softworks.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Softworks.TextStrokeTransparency = 0.000
+Softworks.TextWrapped = true
+Softworks.Visible = false
+
+CreditsLabel.Name = "CreditsLabel"
+CreditsLabel.Parent = Icon
+CreditsLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CreditsLabel.BackgroundTransparency = 1.000
+CreditsLabel.Position = UDim2.new(-0.132911578, 0, -2.40880513, 0) -- -0.132911578, 0, -2.40880513, 0
+CreditsLabel.Size = UDim2.new(0, 395, 0, 25)
+CreditsLabel.Font = Enum.Font.GothamBold
+CreditsLabel.Text = "SpeedSterKawaii#0001"
+CreditsLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+CreditsLabel.TextScaled = true
+CreditsLabel.TextSize = 14.000
+CreditsLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+CreditsLabel.TextStrokeTransparency = 0.000
+CreditsLabel.TextWrapped = true
+CreditsLabel.Visible = false
+Icon:TweenPosition(UDim2.new(0.361, 0,0.415, 0), "Out", "Quad", 0.5, true)
+wait(1)
+AquaLabel.Visible = true
+AquaLabel:TweenPosition(UDim2.new(1, 0,0.138, 0), "Out", "Quad", 0.5, true)
+wait(1)
+Softworks.Visible = true
+Softworks:TweenPosition(UDim2.new(1, 0,0.453, 0), "Out", "Quad", 0.5, true)
+wait(3)
+CreditsLabel.Visible = true
+wait(1)
+Softworks.Visible = false
+AquaLabel.Visible = false
+CreditsLabel.Visible = false
+Icon:TweenPosition(UDim2.new(0.438, 0,0.415, 0), "Out", "Quad", 0.5, true)
+wait(1)
+Icon:TweenPosition(UDim2.new(0, 0, 1.5, 0), "Out", "Quad", 1, true)
+wait(1)
+Aqua:Destroy()
